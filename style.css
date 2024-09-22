@@ -117,3 +117,39 @@ img {
     flex-basis: 50%;
 }
 
+@media(max-width:991px) {
+    .menu {
+        padding: 20px;
+        position: relative;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #072d44;
+    }
+
+    .menu .navbar ul {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #000;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+}
